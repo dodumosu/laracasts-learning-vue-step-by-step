@@ -13,6 +13,7 @@
                 <textarea class="ctrl-input" v-model="message"></textarea>
                 <button class="btn" type="submit" v-show="message">Send message</button>
             </form>
+            <pre class="code">{{ $data | json }}</pre>
         </div>
         <script src="assets/js/vue.min.js"></script>
         <script>
