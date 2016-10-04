@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laracasts Learning Vue 1.0 Step by Step: Lesson 02</title>
+        <link href="assets/css/kule-lazy.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <form>
+                <p style="color: #f00; font-weight: bold;" v-show="!message">You must enter a
+                message</p>
+                <textarea class="ctrl-input" v-model="message"></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="assets/js/vue.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    message: ''
+                }
+            });
+        </script>
+    </body>
+</html>
