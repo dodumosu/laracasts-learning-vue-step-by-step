@@ -11,7 +11,7 @@
                 <p style="color: #f00; font-weight: bold;" v-show="!message">You must enter a
                 message</p>
                 <textarea class="ctrl-input" v-model="message"></textarea>
-                <button class="btn" type="submit">Submit</button>
+                <button class="btn" type="submit" v-show="message">Send message</button>
             </form>
         </div>
         <script src="assets/js/vue.min.js"></script>
