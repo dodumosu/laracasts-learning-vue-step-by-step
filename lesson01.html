@@ -9,6 +9,7 @@
         <div id="app">
             <h1>{{ message }}</h1>
             <input class="ctrl-input" type="text" v-model="message">
+            <pre class="code">{{ $data | json }}</pre>
         </div>
         <script src="assets/js/vue.min.js"></script>
         <script>
