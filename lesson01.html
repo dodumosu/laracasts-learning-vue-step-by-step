@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laracasts Learning Vue 1.0 Step by Step: Lesson 01</title>
+        <link href="assets/css/kule-lazy.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ message }}</h1>
+        </div>
+        <script src="assets/js/vue.min.js"></script>
+        <script>
+            var data = {
+                message: 'Hello World'
+            };
+
+            new Vue({
+                el: '#app',
+                data: data
+            });
+        </script>
+    </body>
+</html>
