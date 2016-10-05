@@ -4,13 +4,20 @@
         <meta charset="UTF-8">
         <title>Laracasts Learning Vue 1.0 Step by Step: Lesson 03</title>
         <link href="assets/css/kule-lazy.min.css" rel="stylesheet">
+        <link href="assets/css/kule-theme-default.min.css" rel="stylesheet">
     </head>
     <body>
-        <div id="app">
-            <form action="lesson-03-done.html" v-on:submit="handleIt">
-                <button class="btn color-primary" type="submit">Submit
+        <div class="container">
+            <div class="columns-5">
+                <div class="col-3 col-centered">
+                    <div id="app" class="align-middle">
+                        <form action="lesson-03-done.html" v-on:submit="handleIt">
+                            <button class="btn color-primary" type="submit">Submit
                     Me!</button>
-            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="assets/js/vue.min.js"></script>
         <script>
