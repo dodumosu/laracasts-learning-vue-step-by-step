@@ -24,8 +24,9 @@
             new Vue({
                 el: '#app',
                 methods: {
-                    handleIt: function () {
-                        alert('Hello!');
+                    handleIt: function (e) {
+                        alert('Handled!');
+                        e.preventDefault();
                     }
                 }
             });
