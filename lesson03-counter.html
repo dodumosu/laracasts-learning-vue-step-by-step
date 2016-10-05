@@ -11,7 +11,7 @@
             <div class="columns-5">
                 <div class="col-3 col-centered">
                     <div id="app" class="align-middle">
-                        <button class="btn color-primary" @click="updateCount">Increment Counter: {{ count }}</button>
+                        <button class="btn color-primary" @click="count += 1">Increment Counter: {{ count }}</button>
                     </div>
                 </div>
             </div>
@@ -22,11 +22,6 @@
                 el: '#app',
                 data: {
                     count: 0
-                },
-                methods: {
-                    updateCount: function() {
-                        this.count += 1;
-                    }
                 }
             });
         </script>
