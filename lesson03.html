@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laracasts Learning Vue 1.0 Step by Step: Lesson 03</title>
+        <link href="assets/css/kule-lazy.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <form action="lesson-03-done.html" v-on:submit="handleIt">
+                <button class="btn color-primary" type="submit">Submit
+                    Me!</button>
+            </form>
+        </div>
+        <script src="assets/js/vue.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                methods: {
+                    handleIt: function () {
+                        alert('Hello!');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
